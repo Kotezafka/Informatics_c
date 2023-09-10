@@ -1,5 +1,15 @@
 #include <stdio.h>
 
+int max(int a, int b)
+{
+    if (a > b)
+    {
+        return a;
+    }
+    return b;
+    
+}
+
 int main()
 {
     int a = 0,
@@ -8,14 +18,7 @@ int main()
 
     scanf("%d%d", &a, &b);
 
-    if (a > b)
-    {
-        m = a;
-    }
-    else
-    {
-        m = b;
-    }
+    m = max(a, b);
 
-    printf("%d\n", m); 
+    printf("%d\n", m);
 }
