@@ -1,21 +1,25 @@
 #include <stdio.h>
 
-void sum(int n, int sum1, int i)
+void sum(int n)
 {
-    for (i = 1; i < n + 1; ++i)
+    int sum2 = 0;
+    for (int i = 1; i < n + 1; ++i)
     {
-        sum1 += i * i;
+        sum2 += i * i;
     }
-    printf("%d\n", sum1);
+    printf("%d\n", sum2);
+}
+
+void sum_squares()
+{
+    int n = 0;
+    
+    scanf("%d", &n);
+
+    sum(n);
 }
 
 int main()
 {
-    int n = 0,
-        i = 0,
-        sum1 = 0;
-
-    scanf("%d", &n);
-
-    sum(n, sum1, i);
+    sum_squares();
 }
