@@ -2,12 +2,12 @@
 
 void calculate_factorial(int n)
 {
-    int factorial1 = 1;
-    for (int i = 1; i < n + 1; ++i)
+    int fact = 1;
+    for (int i = 2; i < n + 1; ++i)
     {
-        factorial1 *= i;
+        fact *= i;
     }
-    printf("%d\n", factorial1);
+    printf("%d\n", fact);
 }
 
 void factorial()
