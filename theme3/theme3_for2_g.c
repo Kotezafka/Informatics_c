@@ -1,13 +1,18 @@
 #include <stdio.h>
+#include <math.h>
 
 int calculate_min_divisor(int x)
 {
     int i = 2;
-    while (x % i != 0)
+    while (i < sqrt(x) + 1)
     {
+        if (x % i == 0)
+        {
+            return i;
+        }
         i += 1;
     }
-    return i;
+    return x;
 }
 
 void min_divisor()
