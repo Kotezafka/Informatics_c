@@ -14,8 +14,7 @@ void calculate_powers_of_two(int n)
 
 void powers_of_two()
 {
-    int n = 0,
-        m = 0;
+    int n = 0;
 
     scanf("%d", &n);
 
