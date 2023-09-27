@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int calculate_min_divisor(int n)
+void calculate_min_divisor(int n)
 {
     int i = 2;
 

@@ -2,7 +2,7 @@
 
 #include <math.h>
 
-int calculate_square_number(int n)
+void calculate_square_number(int n)
 {
     int t = 0,
         i = 1;
